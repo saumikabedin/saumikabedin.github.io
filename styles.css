@@ -111,12 +111,6 @@ body{
 }
 
 /* Positioning for specific GIFs */
-.ruined-king {
-    top: 0px; 
-    left: 100px; 
-    z-index: 2; 
-    cursor: auto;
-}
 
 .ragnar {
     top: 0px; 
@@ -188,15 +182,6 @@ body{
     cursor: auto;
 }
 
-.yennifer {
-    top: 250px; 
-    left: 1100px; 
-    z-index: 4; 
-    width: 400px; 
-    height: 300px; 
-    cursor: auto;
-}
-
 .fight{
     top: 550px; 
     left: 538px; 
@@ -219,15 +204,6 @@ body{
     top: 300px; 
     left: 1100px; 
     z-index: 4; 
-    cursor: auto;
-}
-
-.instagram {
-    top: 475px; 
-    left: 300px; 
-    z-index: 2; 
-    width: 90px; 
-    height: 90px; 
     cursor: auto;
 }
 
@@ -312,24 +288,6 @@ body{
     top: 900px;
     left: 1360px;
     z-index: 3;
-    max-width: 400px;
-    max-height: 400px;
-    cursor: auto;
-}
-
-.mindfulCares{
-    top: 1050px;
-    left: 1360px;
-    z-index: -2;
-    max-width: 400px;
-    max-height: 400px;
-    cursor: auto;
-}
-
-.LixandroBenjamin{
-    top: 1050px;
-    left: 999px;
-    z-index: 1;
     max-width: 400px;
     max-height: 400px;
     cursor: auto;
