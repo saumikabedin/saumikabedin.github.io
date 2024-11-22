@@ -1,0 +1,441 @@
+/* Resetting default margins and padding for body and html */
+body, html, h1, p {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Setting the height of the body and html to 100% */
+}
+
+body{
+    cursor: none;
+}
+
+.custom-cursor {
+    position: absolute;
+    pointer-events: none;
+    z-index: -1;
+    width: 30px;
+    height: auto;
+    left: 0px;
+    top: 0px;
+}
+
+.cursor-gif {
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+/* Style for the mobile billboard container */
+.mobile-billboard {
+    width: 100%;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    text-align: left; /* Left-align the text */
+    position: fixed; /* Fixed position to keep it visible */
+    bottom: 0; /* Stick to the bottom of the viewport */
+    left: 0; /* Align to the left */
+    padding: 10px; /* Add some padding */
+    overflow: hidden; /* Hide overflow to prevent text wrapping */
+    z-index: 4;
+}
+
+/* Style for the text inside the billboard */
+.billboard-text {
+    font-size: 18px;
+    font-weight: bold;
+    white-space: nowrap; /* Prevent text from wrapping */
+    animation: slideText 10s linear infinite; /* Animation */
+    z-index: 5;
+}
+
+/* Keyframes for the slideText animation */
+@keyframes slideText {
+    0% { transform: translateX(0%); } /* Start from the right edge */
+    100% { transform: translateX(-100%); } /* End at the left edge */
+}
+
+/* Styling the background GIF */
+.background-gif {
+    position: fixed; /* Fixed positioning to cover the entire viewport */
+    top: 0; /* Position from the top */
+    left: 0; /* Position from the left */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-image: url('aceButRomantic.gif'); /* Specify the background image */
+    background-size: auto auto; /* Maintain the original size of the background */
+    background-repeat: repeat; /* Repeat the background */
+    background-position: center center; /* Center the background */
+    z-index: -1; /* Set z-index to push the background behind other content */
+}
+
+/* Styling the content area */
+.content {
+    position: relative; /* Position relative to allow z-index to work */
+    z-index: 1; /* Ensure content appears above the background */
+    padding: 20px; /* Add padding to the content */
+    color: #babd25; /* Set text color to white */
+    text-align: center; /* Center align text */
+}
+
+/* Styling the title */
+.content h1 {
+    font-size: 2em; /* Set font size for the title */
+}
+
+/* Styling the paragraph */
+.content p {
+    font-size: 1.2em; /* Set font size for paragraphs */
+    margin-bottom: 20px; /* Add margin at the bottom */
+}
+
+/* Styling the GIF container */
+.gif-container {
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Styling the positioned GIFs */
+.positioned-gif {
+    position: absolute; 
+}
+
+/* Styling the positioned GIFs */
+.positioned-jpg {
+    position: relative; 
+}
+
+/* Positioning for specific GIFs */
+.ruined-king {
+    top: 0px; 
+    left: 100px; 
+    z-index: 2; 
+    cursor: auto;
+}
+
+.ragnar {
+    top: 0px; 
+    left: 550px; 
+    z-index: 2; 
+    cursor: auto;
+}
+
+.neeko {
+    top: 0px; 
+    left: 1300px; 
+    z-index: 4; 
+    width: 300px;
+    height: 300px;
+    cursor: auto;
+}
+
+.goku {
+    top: 410px; 
+    left: 1200px; 
+    z-index: 5; 
+    cursor: auto;
+}
+
+.dovah {
+    top: 250px; 
+    left: 100px; 
+    z-index: 2; 
+    cursor: auto;
+}
+
+.peakyFUCKINblinders {
+    top: 250px; 
+    left: 500px; 
+    z-index: 2; 
+    cursor: auto;
+}
+.sonic {
+    top: 200px; 
+    left: 80px; 
+    z-index: 4; 
+    width: 200px; 
+    height: 500px; 
+    cursor: auto;
+}
+
+.chief {
+    top: 0px; 
+    left: 950px; 
+    z-index: 3; 
+    width: 400px; 
+    height: 300px; 
+    cursor: auto;
+}
+
+.drifting {
+    top: 200px; 
+    left: 450px; 
+    z-index: 2; 
+    cursor: auto;
+}
+
+.hollywoodsbleeding {
+    top: 0px; 
+    left: 900px; 
+    z-index: 1; 
+    max-width: 900px; 
+    max-height: 900px;    
+    cursor: auto;
+}
+
+.yennifer {
+    top: 250px; 
+    left: 1100px; 
+    z-index: 4; 
+    width: 400px; 
+    height: 300px; 
+    cursor: auto;
+}
+
+.fight{
+    top: 550px; 
+    left: 538px; 
+    z-index: 2; 
+    width: 400px; 
+    height: 300px; 
+    cursor: auto;
+}
+
+.twitch {
+    top: 480px; 
+    left: 150px; 
+    z-index: 2; 
+    width: 175px; 
+    height: 100px; 
+    cursor: auto;
+}
+
+.cowboyBebop {
+    top: 300px; 
+    left: 1100px; 
+    z-index: 4; 
+    cursor: auto;
+}
+
+.instagram {
+    top: 475px; 
+    left: 300px; 
+    z-index: 2; 
+    width: 90px; 
+    height: 90px; 
+    cursor: auto;
+}
+
+.restIsFuel {
+    top: 475px; 
+    left: 400px; 
+    z-index: 4; 
+    width: 100px;
+    height: 100px;
+    cursor: auto;
+}
+
+.starkiller{
+    top: 200px; 
+    left: 925px; 
+    z-index: 4; 
+    width: 200px;
+    height: 150px;
+    cursor: auto;
+}
+
+.hungryMoon{
+    top: 550px; 
+    left: 900px; 
+    z-index: 4; 
+    width: 200px;
+    height: 150px;
+    cursor: auto;
+}
+
+.jojoFight{
+    top: 588px;
+    left: 100px;
+    z-index: 4;
+    cursor: auto;
+}
+
+.darkMagician{
+    top: 710px;
+    left: 800px;
+    z-index: 3;
+    width: 200px;
+    height: 150px;
+    cursor: auto;
+}
+
+.yesYesYesYes{
+    top: 710px;
+    left: 350px;
+    z-index: 3;
+    cursor: auto;
+}
+
+.WARNING{
+    top: 450px;
+    left: 100px;
+    z-index: 1;
+    max-width: 500px;
+    max-height: 500px;
+    cursor: auto;
+}
+
+.whiteNoise{
+    top: 110px;
+    left: -838px;
+    z-index: 3;
+    max-width: 400px;
+    max-height: 400px;
+    cursor: auto;
+}
+
+.shadow{
+    top: 900px;
+    left: 999px;
+    z-index: 3;
+    max-width: 400px;
+    max-height: 400px;
+    cursor: auto;
+}
+
+.evilGeniuses{
+    top: 900px;
+    left: 1360px;
+    z-index: 3;
+    max-width: 400px;
+    max-height: 400px;
+    cursor: auto;
+}
+
+.mindfulCares{
+    top: 1050px;
+    left: 1360px;
+    z-index: -2;
+    max-width: 400px;
+    max-height: 400px;
+    cursor: auto;
+}
+
+.LixandroBenjamin{
+    top: 1050px;
+    left: 999px;
+    z-index: 1;
+    max-width: 400px;
+    max-height: 400px;
+    cursor: auto;
+}
+
+.zuko{
+    top: 1100px;
+    left: 1390px;
+    z-index: 1;
+    max-width: 300px;
+    max-height: 300px;
+    cursor: auto;
+}
+
+.cello{
+    top: 1100px;
+    left: 1100px;
+    z-index: 2;
+    max-width: 300px;
+    max-height: 300px;
+    cursor: auto;
+}
+
+
+/* Styling the audio player */
+#audio-player {
+    top: 588px;
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%);
+    width: 80%; /* Adjust width as needed */
+    z-index: 5;
+  }
+
+  /* Styling the play/pause button */
+  #audio-player button {
+    background-color: #c21010;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    z-index: 5;
+  }
+   
+  /* Styling the volume slider */
+  #audio-player input[type="range"] {
+    width: 200px;
+    background-color: #e6d6d6; /* Track color */
+    height: 5px; /* Adjust height as needed */
+    border-radius: 5px;
+    outline: none;
+    z-index: 5;
+  }
+  
+  #audio-player input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px; /* Adjust thumb size as needed */
+    height: 15px; /* Adjust thumb size as needed */
+    background-color: #fff; /* Thumb color */
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 5;
+  }
+  
+  /* Styling the timestamp */
+  #audio-player .timestamp {
+    color: #c21010;
+    font-size: 12px;
+    margin-top: 5px; /* Adjust margin as needed */
+  }
+
+  /* Media queries for smaller screens */
+@media screen and (max-width: 768px) {
+    /* Adjustments for smaller screens */
+    
+    .content{
+        text-align: center;
+        
+    }
+
+    .gif-container {
+        visibility: hidden;
+    }
+
+    .background-gif {
+        background-image: url(drifting.gif);
+        background-repeat: repeat;
+        background-size: 100%;
+        background-position: center;
+    }
+    
+    .content {
+        padding: 20px; /* Add padding to the content */
+    }
+    
+    .gif-container {
+        /* Adjust GIF container styles for smaller screens */
+        overflow-x: auto; /* Enable horizontal scrolling */
+        white-space: nowrap; /* Prevent line breaks */
+    }
+
+    .positioned-gif {
+        /* Adjust individual GIF styles for smaller screens */
+        display: inline-block; /* Display GIFs inline */
+        margin: 0 10px; /* Add margin for spacing */
+    }
+
+   
+}
+
