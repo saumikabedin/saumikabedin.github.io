@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>itzSaumik</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Official portfolio of itzSaumik, a passionate gamer, coder, and content creator. Follow me on Twitch and explore my work!">
+    <meta name="keywords" content="itzSaumik, Saumik Abedin, portfolio, gaming, coder, content creator, Twitch, Song of the Week, itzsaumik Twitch">
+    <meta name="author" content="Saumik Abedin">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph for Social Media Sharing -->
+    <meta property="og:title" content="itzSaumik - Official Portfolio">
+    <meta property="og:description" content="Check out the official portfolio of itzSaumik, featuring Twitch streams, songs, and more!">
+    <meta property="og:image" content="pfpTransparentPurple.png"> <!-- Use an image that represents your brand -->
+    <meta property="og:url" content="https://www.superkoolboss.com">
+
+    <!-- Twitter Card Metadata -->
+    <meta name="twitter:title" content="itzSaumik - Official Portfolio">
+    <meta name="twitter:description" content="Discover the official site of itzSaumik, including my Twitch channel and Song of the Week.">
+    <meta name="twitter:image" content="pfpTransparentPurple.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.superkoolboss.com">
+
+    <link rel="icon" href="https://www.superkoolboss.com/images/pfpTransparentPurple.png" sizes="32x32" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+
+    <!-- JSON-LD Structured Data for SEO -->
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Saumik Abedin",
+          "url": "https://www.superkoolboss.com/",
+          "sameAs": [
+            "https://www.twitch.tv/itzsaumik",
+            "https://twitter.com/itzsaumik"
+          ],
+          "description": "Saumik Abedin is a passionate coder, gamer, and content creator. Follow my journey on Twitch and YouTube.",
+          "image": "https://www.yourwebsite.com/pfpTransparentPurple.png",
+          "jobTitle": "Content Creator",
+          "worksFor": {
+            "@type": "Organization",
+            "name": "Self-Employed"
+          }
+        }
+        </script>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about"><img src="pfpTransparentPurple.png" alt="Icon" class="header-icon">About Me</a></li>
+                <li><a href="#twitch">Twitch</a></li>
+                <li><a href="#songoftheweek">Song of the Week</a></li>
+            </ul>
+        </nav>
+    </header> 
+    <div class="background">
+        <div class="content">
+        <section id="about" class="section">
+            <h1>About Me</h1>
+            <p>Hello world! itzSaumik here, a passionate gamer, coder, and content creator. </p>
+        </section>
+
+        <section id="twitch" class="section">
+            
+            <div class="embed-container">
+                <div class="video">
+                    <h2>Twitch</h2>
+                    <iframe 
+                        src="https://player.twitch.tv/?channel=itzsaumik&parent=superkoolboss.com" 
+                        frameborder="0" 
+                        allowfullscreen="true" 
+                        scrolling="no" 
+                        height="378" 
+                        width="620">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <section id="song-of-the-week" class="section">
+            <h1>Song of the Week</h1>
+            <div class="audio-player">
+                <audio id="audio-player" src="troubles.mp3"></audio>
+                <div class="controls">
+                    <button id="play-pause-btn">▶</button>
+                    <span id="current-time">0:00</span>
+                    <input type="range" id="progress-bar" value="0" min="0" max="100">
+                    <span id="duration">0:00</span>
+                    <button id="volume-btn">🔊</button>
+                    <input type="range" id="volume-bar" value="50" min="0" max="100" style="display: none;">
+                </div>
+            </div>
+        </section>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 itzsaumik. All rights reserved.</p>
+    </footer>
+
+    <div class="rotating-banner">
+        <a href="https://www.twitch.tv/itzsaumik" target="_blank" class="banner-link">
+            Check out my Twitch Channel: itzsaumik!
+        </a>
+    </div>
+    
+</body>
+</html>
