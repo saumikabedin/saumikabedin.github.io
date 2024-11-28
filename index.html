@@ -124,6 +124,19 @@
             }
         });
     </script>
+
+    <!-- Load the Twitch embed JavaScript file -->
+    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+    <!-- Create the Twitch Embed object -->
+    <script type="text/javascript">
+        new Twitch.Embed("twitch-embed", {
+            width: 854,  // Width of the Twitch embed
+            height: 480, // Height of the Twitch embed
+            channel: "itzsaumik",  // Your Twitch channel name
+            parent: ["superkoolboss.com"] // Required for the embed to work (your domain)
+        });
+    </script>
     
 </body>
 </html>
