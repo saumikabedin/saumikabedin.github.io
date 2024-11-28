@@ -87,6 +87,18 @@ video iframe {
     height: 315px;
 }
 
+.spotify-embed-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* Optional: Set a max width for larger screens */
+    margin: 0 auto; /* Center the iframe */
+}
+
+.spotify-embed-wrapper iframe {
+    width: 100%; /* Full-width responsiveness */
+    height: 352px; /* Default height */
+}
+
 .audio-player {
     display: flex;
     flex-direction: column;
@@ -157,6 +169,11 @@ footer {
     .video iframe {
         height: 250px;
     }
+    
+    .spotify-embed-wrapper iframe {
+        height: 250px; /* Adjust height for smaller screens */
+    }
+    
     .rotating-banner {
         padding: 8px 0; /* Reduce padding */
     }
