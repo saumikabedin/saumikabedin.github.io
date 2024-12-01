@@ -75,7 +75,7 @@ header nav ul li a {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    align-items: center
+    align-items: center;
 }
 
 .video {
